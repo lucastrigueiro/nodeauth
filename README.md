@@ -9,7 +9,7 @@ BD_DATABASE=nodeauth
 
 MS_PORT=8020
 
-SECRET_KEY=seu_secret_key
+SECRET_KEY=your_secret_key
 ```
 
 # Run dev
