@@ -13,7 +13,8 @@ const {
 } = databaseValues;
 
 export const AppDataSource = new DataSource({
-    type: 'mysql',
+    type: 'postgres',
+    // type: 'mysql',
     host,
     port,
     username,

@@ -1,6 +1,6 @@
 import { HttpException } from "../../exceptions/exceptions";
 
-export function errorMiddleware(err, req, res, next) {
+export function errorMiddleware(err, req, res) {
   if (err instanceof HttpException) {
       return res.status(err.status).json({
           status: err.status,

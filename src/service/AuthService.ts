@@ -1,6 +1,7 @@
 import { AppDataSource } from "../config/database/dataSource";
 import { UserService } from './UserService';
 import { NotFoundException, UnauthorizedException } from '../exceptions/exceptions';
+import { User } from "../entity/User";
 
 export class AuthService {
   private userService: UserService;
@@ -9,7 +10,7 @@ export class AuthService {
     this.userService = new UserService(AppDataSource);
   }
 
-  async validateUser(email: string, password: string): Promise<any> {
+  async validateUser(email: string, password: string): Promise<User> {
     const user = await this.userService.findByEmail(email);
     if (!user) {
       throw new NotFoundException('User not found');

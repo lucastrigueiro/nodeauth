@@ -4,11 +4,21 @@
     "commonjs": true,
     "es2021": true
   },
-  "extends": "eslint:recommended",
-  "overrides": [],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
   "rules": {
     "indent": [
       "error",
@@ -32,6 +42,16 @@
         "vars": "all",
         "args": "none",
         "ignoreRestSiblings": false
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "lf",
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "none"
       }
     ]
   }

@@ -1,3 +1,6 @@
+
+
+
 # Env variables example
 ```
 # Database
@@ -19,6 +22,22 @@ npm run dev
 
 
 
+
+# EsLint e Prettier
+
+# instalação eslint
+npx eslint --init
+
+# verificação dos arquivos
+npm run lint
+npx eslint src/**/*.ts
+
+# instalar as extensões eslint e prettier
+
+
+
+# verificação se as dependências estão atualizada
+npm outdated
 
 
 
