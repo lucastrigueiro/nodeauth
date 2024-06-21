@@ -1,4 +1,4 @@
-# Env Variables
+# Env variables example
 ```
 # Database
 BD_HOST=localhost
