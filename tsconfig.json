@@ -1,0 +1,19 @@
+{
+   "compilerOptions": {
+      "lib": [
+         "es5",
+         "es6"
+      ],
+      "target": "es2021",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "./build",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "strict": false,
+      "esModuleInterop": true,   // Permite interoperabilidade padrão de módulo ES para módulos CommonJS
+      "allowSyntheticDefaultImports": true // Permite importações padrão de módulos que não têm exportações padrão
+
+   }
+}
